@@ -1,5 +1,7 @@
 # vue-event-testing-sandbox
 
+Collection of different ways to redefine event handlers while doing unit tests in Vue
+
 ## Project setup
 ```
 npm install
@@ -19,6 +21,11 @@ npm run build
 ```
 npm run test:unit
 ```
+or with watch:
+```
+npm run test:unit:watch
+```
+
 
 ### Lints and fixes files
 ```
