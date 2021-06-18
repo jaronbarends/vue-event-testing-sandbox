@@ -1,6 +1,20 @@
 # vue-event-testing-sandbox
 
-Collection of different ways to redefine event handlers while doing unit tests in Vue
+Collection of different ways to redefine event handlers while doing unit tests in Vue.
+
+There are different ways to create event handlers in a vue component:
+```vue
+<my-component @click="clickHandler" />
+<my-component @click="clickHandler()" />
+<my-component @click="clickHandlerDefinedInProps">
+```
+When you try to redefine the clickHandler with
+```javascript
+wrapper.vm.clickHandler = jest.fn();
+```
+You may get unexpected results.
+
+This repo examines some of the differences.
 
 ## Project setup
 ```
